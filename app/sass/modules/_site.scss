@@ -1,0 +1,28 @@
+.site {
+  position: relative;
+  margin-top: 0;
+  z-index: 2;
+
+  @media only screen and (min-width : 768px) {
+    margin-top: -690px;
+  }
+}
+
+.site.max-width {
+  padding-left: 0;
+  padding-right: 0;
+
+  @media only screen and (min-width : 768px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media only screen and (min-width : 992px){
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.site-content {
+  padding-bottom: 10px;
+}

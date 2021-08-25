@@ -1,0 +1,74 @@
+/*!
+ *! _____ BUTTONS styles ________________________________ */
+
+.wrap-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(166, 246, 126, 0.63), inset 0 0 8px rgba(184, 238, 157, 0.46);
+    border: 1px solid #b7ef9d;
+    background-color: rgba(133, 189, 74, 0.9);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), repeating-linear-gradient(120deg, transparent, transparent 8px, rgba(255,255,255,.1) 8px, rgba(255,255,255,.1) 16px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    .nasechki-btn {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url("../img/nasechki-btn.png") center center repeat-x;
+    }
+
+    .nail-left-top {
+        left: 2px;
+        top: 2px;
+    }
+    .nail-right-top {
+        right: 2px;
+        top: 2px;
+    }
+    .nail-left-bottom {
+        left: 2px;
+        bottom: 2px;
+    }
+    .nail-right-bottom {
+        right: 2px;
+        bottom: 2px;
+    }
+}
+
+input[type=submit],
+input[type=button],
+button,
+.btn,
+.nav-links .current {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 33px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-shadow: 0 1px 1px #405c33;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    outline: none;
+    @include fontSize(16px);
+    white-space: pre-wrap;
+    border-radius: 3px;
+    transition: 0.1s;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1) ;
+    }
+}

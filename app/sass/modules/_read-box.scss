@@ -1,0 +1,125 @@
+.internail-page {
+  .read-box {
+    margin-top: 50px;
+  }
+}
+
+.box.widget-categories {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  padding: 0;
+
+  @media only screen and (min-width : 768px) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  &:before,
+  &:after {
+    display: none;
+  }
+
+  .menu {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  li {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.box.widget-subscribe {
+  max-width: 315px;
+  width: 100%;
+  background: url("../img/bg-widget-subscribe.png") center top no-repeat;
+  background-size: 100% 100%;
+  margin-top: 60px;
+  padding: 80px 35px 55px;
+
+  @media only screen and (min-width : 768px) {
+    display: none;
+  }
+
+  &:before, &:after {
+    display: none;
+  }
+
+  .widget-subscribe__form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  input {
+    min-height: 39px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 5px 18px;
+  }
+
+  .wrap-btn {
+    width: calc(100% - 20px);
+    margin-top: 25px;
+  }
+
+  button {
+    width: 100%;
+    min-height: 38px;
+  }
+}
+
+.feedback-page .box.widget-subscribe {
+  margin-top: 40px;
+}
+
+.read-box {
+  display: none;
+  background: url("../img/bg-count-read.png") center no-repeat;
+  background-size: 101% 100%;
+  margin-bottom: 0;
+  padding: 56px 63px 56px;
+
+  @media only screen and (min-width : 768px) {
+    display: block;
+  }
+
+  .title {
+    @include fontSize(18px);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  form {
+    text-align:  center;
+
+    > input:first-of-type,
+    > input:nth-of-type(2) {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      @media only screen and (min-width : 992px){
+        width: calc(50% - 10px);
+      }
+    }
+
+    > input:first-of-type {
+      float: left;
+    }
+
+    > input:nth-of-type(2) {
+      float: right;
+    }
+  }
+
+  .wrap-btn {
+    width: 221px;
+    min-height: 38px;
+    box-shadow: 0 8px 14px -3px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(166, 246, 126, 0.63), inset 0 0 8px rgba(184, 238, 157, 0.46);
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,107 @@
+.site-footer {
+  padding-top: 5px;
+  padding-bottom: 40px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    float: right;
+    width: 100%;
+
+    @media only screen and (min-width : 768px) {
+      width: calc(100% - 325px);
+      flex-flow: wrap;
+    }
+
+    &:before {
+      content: url("../img/robot-foot.png");
+      position: absolute;
+      left: -250px;
+      bottom: -44px;
+    }
+  }
+
+  .site-footer__copyright {
+    position: relative;
+    color: #fff;
+    @include fontSize(14px);
+    padding-left: 0;
+    margin-right: 10px;
+
+    @media only screen and (min-width : 768px) {
+      padding-left: 83px;
+    }
+
+    &:before {
+      display: none;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 77px;
+      height: 77px;
+      background: url("../img/logotip.png") -10px no-repeat;
+      background-size: cover;
+
+      @media only screen and (min-width : 768px) {
+        display: block;
+      }
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 1.4;
+      letter-spacing: -0.6px;
+    }
+
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+  
+  .site-footer__counters {
+    display: block;
+    width: 88px;
+    min-width: 88px;
+    height: 31px;
+    background: url("../img/counter-foot.png");
+    margin-top: 30px;
+  }
+
+  .scrolltop {
+    opacity: 0.5;
+    position: fixed;
+    z-index: 100;
+    bottom: 140px;
+    right: 10px;
+    width: 35px;
+    height: 47px;
+    background: url("../img/bg-btn-totop.png") no-repeat;
+    background-size: 100% 100%;
+    transition: 0.1s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    @media only screen and (min-width : 768px){
+      right: 18px;
+      bottom: 240px;
+    }
+
+    @media only screen and (min-width : 992px){
+      right: 33px;
+    }
+
+    @media only screen and (min-width : 1160px){
+      width: 38px;
+      right: auto;
+      margin-left: 690px;
+      opacity: 1;
+    }
+  }
+}

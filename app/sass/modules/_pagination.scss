@@ -1,0 +1,75 @@
+.pagination {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+
+  .nav-links {
+    width: 100%;
+    display: inline-flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media only screen and (min-width : 768px) {
+      width: auto;
+    }
+
+    span, a {
+      padding: 7px 13px;
+    }
+
+    .current, .page-numbers {
+      &:hover {
+        background: url("../img/bg-paginator-current.png") no-repeat;
+        background-size: 100% 100%;
+        box-shadow: 0 3px 6px -3px #000;
+        text-shadow: 0 1px 1px #405c33;
+      }
+    }
+
+    .dots {
+      &:hover {
+        background: none;
+        text-shadow: none;
+        box-shadow: none;
+      }
+    }
+
+    .current {
+      width: auto;
+      background: url("../img/bg-paginator-current.png") no-repeat;
+      background-size: 100% 100%;
+      box-shadow: 0 3px 6px -3px #000;
+    }
+  }
+
+  .search-page {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+    min-height: 39px;
+    box-shadow: inset 0 3px 7px rgba(93, 93, 93, 0.24), 0 0 10px 1px rgba(205, 205, 205, 0.4);
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.51);
+    background-color: #ebebeb;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 18px;
+
+    @media only screen and (min-width : 768px) {
+      margin-right: 0;
+    }
+
+    .wrap-btn {
+      max-width: 102px;
+      margin: 0;
+    }
+  }
+}

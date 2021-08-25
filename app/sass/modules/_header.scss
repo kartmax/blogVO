@@ -1,0 +1,129 @@
+.site-header {
+  position: relative;
+  z-index: 1;
+  background: url("../img/bg-header.png") 50.5% top no-repeat;
+  min-height: 475px;
+
+  @media only screen and (min-width : 768px) {
+    min-height: 1100px;
+  }
+
+  .container {
+    position: relative;
+    top: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    @media only screen and (min-width : 768px){
+      top: 320px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @media only screen and (min-width : 992px){
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+.site-branding {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 100%;
+  border-bottom: 1px solid #fff;
+  background-color: #7999b2;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), repeating-linear-gradient(120deg, transparent, transparent 8px, rgba(255,255,255,.1) 8px, rgba(255,255,255,.1) 16px);
+  max-width: 463px;
+  min-height: 55px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.81);
+  color: #152138;
+  padding: 10px 60px 10px 85px;
+
+  @media only screen and (min-width : 768px){
+    display: block;
+    min-height: 94px;
+    background: url("../img/logo-bg.png") no-repeat;
+    border-bottom: 0;
+    padding: 10px 75px 10px 97px;
+  }
+
+  @media only screen and (min-width : 860px) {
+    margin-left: 6px;
+  }
+}
+
+.home-page .site-title {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    width: 65px;
+    height: 65px;
+    background: url('../img/logotip.png') no-repeat;
+    background-size: cover;
+
+    @media only screen and (min-width : 768px) {
+      width: 97px;
+      height: 97px;
+      left: 0;
+    }
+  }
+}
+
+.site-title {
+  max-width: 229px;
+  @include fontSize(20px);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media only screen and (min-width : 768px) {
+    @include fontSize(25px);
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+
+  span {
+    display: none;
+
+    @media only screen and (min-width : 768px){
+      display: block;
+      width: 100%;
+      @include fontSize(15px);
+      margin-bottom: 0;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 65px;
+    height: 65px;
+
+    @media only screen and (min-width : 768px) {
+      width: 97px;
+      height: 97px;
+      left: 0;
+    }
+  }
+}
+
+.site-description {
+  display: none;
+
+  @media only screen and (min-width : 768px) {
+    display: block;
+    @include fontSize(16px);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+

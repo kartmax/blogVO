@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gulpbasis</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="feedback-page">
+
+<!-- Custom HTML -->
+<!-- Header -->
+<header class="site-header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="container max-width">
+        <div class="site-branding">
+            <div class="mobail-btn">
+                <div class="icon-bar"></div>
+                <div class="icon-bar"></div>
+                <div class="icon-bar"></div>
+            </div>
+            <div class="site-title" itemprop="headline"><a class="logo" href="index.html"><img src="img/logotip.png" alt=""></a>Блог Василия Осипова <span>Science Craft</span></div>
+            <p class="site-description">Научное ремесло</p>
+
+            <div class="main-navigation mobile-menu">
+                <ul class="menu">
+                    <li class="menu-item"><a href="index.html">Главная</a></li>
+                    <li class="menu-item current-menu-item"><a href="#">Все статьи</a></li>
+                    <li class="menu-item"><a href="#">Об авторе и блоге</a></li>
+                    <li class="menu-item"><a href="#">Моя жизнь</a></li>
+                    <li class="menu-item"><a href="feedback.html">Обратная связь</a></li>
+                </ul>
+
+                <form action="" class="search">
+                    <input type="text" placeholder="Поиск по блогу">
+                    <div class="wrap-btn">
+                        <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                        <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                        <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                        <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                        <div class="nasechki-btn"></div>
+                        <input type="submit" value="найти">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</header>
+<!-- End header -->
+
+
+<!-- Content -->
+<div class="site max-width clearfix">
+
+    <nav id="site-navigation" class="main-navigation desctop-menu">
+        <ul id="header_menu" class="menu">
+            <li class="menu-item"><a href="index.html">Главная</a></li>
+            <li class="menu-item current-menu-item"><a href="#">Все статьи</a></li>
+            <li class="menu-item"><a href="#">Об авторе и блоге</a></li>
+            <li class="menu-item"><a href="#">Моя жизнь</a></li>
+            <li class="menu-item"><a href="feedback.html">Обратная связь</a></li>
+        </ul>
+
+        <form action="" class="search">
+            <input type="text" placeholder="Поиск по блогу">
+            <div class="wrap-btn">
+                <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                <div class="nasechki-btn"></div>
+                <input type="submit" value="найти">
+            </div>
+        </form>
+    </nav>
+
+    <div id="content" class="site-content clearfix">
+        <aside class="widget-area" itemscope itemtype="http://schema.org/WPSideBar">
+            <div class="widget widget-subscribe">
+                <div class="widget-subscribe__header">Подпишись на обновление блога</div>
+                <div class="widget-subscribe__form">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="email" placeholder="Ваш e-mail">
+                    <div class="wrap-btn">
+                        <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                        <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                        <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                        <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                        <div class="nasechki-btn"></div>
+                        <button type="submit" class="btn">Подписаться</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="widget widget-categories widget_nav_menu">
+                <div class="widget-header">Рубрики блога</div>
+
+                <div class="widget__main-bg"></div>
+                <ul class="menu">
+                    <li class="menu-item menu-item-has-children menu-item-1"><a href="javascript:void(0)">Разумная среда обитания</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item your-class"><a href="#">Эффективные технологии будущего</a></li>
+                            <li class="menu-item your-class"><a href="#">Автоматизация биосферы</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-2"><a href="#">Роботизация</a></li>
+                    <li class="menu-item menu-item-3"><a href="#">Автоматизация технологических процессов</a></li>
+                </ul>
+            </div>
+
+            <div class="widget widget-top-commentators">
+                <div class="widget-header">ТОП комментаторов</div>
+
+                <div class="widget__main-bg"></div>
+
+                <div class="list-users">
+                    <div class="commentator-box">
+                        <div class="commentator-box__avatar">
+                            <img src="img/avatar-coment-1.jpg" alt="">
+                            <div class="commentator-box__count">215</div>
+                        </div>
+
+                        <div class="commentator-box__name">Кристина</div>
+                    </div>
+                    <div class="commentator-box">
+                        <div class="commentator-box__avatar">
+                            <img src="img/avatar-coment-2.png" alt="">
+                            <div class="commentator-box__count">215</div>
+                        </div>
+                        <div class="commentator-box__name">Кристина</div>
+                    </div>
+                    <div class="commentator-box">
+                        <div class="commentator-box__avatar">
+                            <img src="img/avatar-coment-3.png" alt="">
+                            <div class="commentator-box__count">215</div>
+                        </div>
+                        <div class="commentator-box__name">Кристина</div>
+                    </div>
+                    <div class="commentator-box">
+                        <div class="commentator-box__avatar">
+                            <img src="img/avatar-coment-4.png" alt="">
+                            <div class="commentator-box__count">215</div>
+                        </div>
+                        <div class="commentator-box__name">Кристина</div>
+                    </div>
+                    <div class="commentator-box">
+                        <div class="commentator-box__avatar">
+                            <img src="img/avatar-coment-5.png" alt="">
+                            <div class="commentator-box__count">215</div>
+                        </div>
+                        <div class="commentator-box__name">Кристина</div>
+                    </div>
+                    <div class="commentator-box">
+                        <div class="commentator-box__avatar">
+                            <img src="img/avatar-coment-6.png" alt="">
+                            <div class="commentator-box__count">215</div>
+                        </div>
+                        <div class="commentator-box__name">Кристина</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget widget-articles">
+                <div class="widget-header">Популярные статьи</div>
+
+                <div class="widget__main-bg"></div>
+
+                <ul>
+                    <li class="article-box">
+                        <div class="article-box__avatar">
+                            <a href="#"><img src="img/avatar-article-widg.png" alt=""></a>
+                        </div>
+                        <a href="#" class="article-box__title">Здесь будет заголовок который придумал дизайнер</a>
+
+                        <div class="wrap-btn">
+                            <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nasechki-btn"></div>
+                            <button type="submit" class="btn">подробнее</button>
+                        </div>
+                    </li>
+                    <li class="article-box">
+                        <div class="article-box__avatar">
+                            <a href="#"><img src="img/avatar-article-widg.png" alt=""></a>
+                        </div>
+                        <a href="#" class="article-box__title">Здесь будет заголовок который придумал дизайнер</a>
+
+                        <div class="wrap-btn">
+                            <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nasechki-btn"></div>
+                            <button type="submit" class="btn">подробнее</button>
+                        </div>
+
+                    </li>
+                    <li class="article-box">
+                        <div class="article-box__avatar">
+                            <a href="#"><img src="img/avatar-article-widg.png" alt=""></a>
+                        </div>
+                        <a href="#" class="article-box__title">Здесь будет заголовок который придумал дизайнер</a>
+
+                        <div class="wrap-btn">
+                            <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nasechki-btn"></div>
+                            <button type="submit" class="btn">подробнее</button>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="widget widget-youtube">
+                <div class="link-avatar">
+                    <img src="img/icon-youtube.png" alt="">
+                </div>
+
+                <div class="wrap-btn">
+                    <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                    <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                    <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                    <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                    <div class="nasechki-btn"></div>
+                    <button type="submit" class="btn">Подписаться на мой канал</button>
+                </div>
+            </div>
+
+            <div class="widget widget-banner">
+                <div class="widget-header">На правах рекламы</div>
+
+                <div class="widget__main-bg"></div>
+
+                <div class="textwidget">
+                    <p>Баннер</p>
+                </div>
+            </div>
+        </aside>
+
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main">
+
+                <div class="wrap-btn btn-subscribe">
+                    <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                    <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                    <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                    <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                    <div class="nasechki-btn"></div>
+                    <button type="submit" class="btn">Подписаться</button>
+                </div>
+
+                <div class="breadcrumb" id="breadcrumbs">
+                    <span xmlns:v="http://rdf.data-vocabulary.org/#">
+                        <span typeof="v:Breadcrumb">
+                            <a href="index.html" class="main-page" rel="v:url" property="v:title">Главная</a>
+                            <span rel="v:child" typeof="v:Breadcrumb"><a href="#" rel="v:url" property="v:title">Обратная связь</a></span>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="box feedback-box">
+                    <form action="" class="feedback-box__form clearfix">
+                        <p class="title">Обратная связь</p>
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="email" name="email" placeholder="Ваш e-mail">
+                        <input type="text" name="theme-message" placeholder="Введите тему вашего сообщения">
+                        <textarea name="text-message" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+
+                        <div class="wrap-btn">
+                            <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nasechki-btn"></div>
+                            <input type="submit" value="Отправить сообщение">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="box widget widget-subscribe">
+                    <div class="widget-subscribe__header">Подпишись на обновление блога</div>
+                    <div class="widget-subscribe__form">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="email" placeholder="Ваш e-mail">
+                        <div class="wrap-btn">
+                            <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nasechki-btn"></div>
+                            <button type="submit" class="btn">Подписаться</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box read-box">
+                    <form action="" class="read-box__form">
+                        <p class="title">Этот блог читают 6666 человек. Читай и ты</p>
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="email" name="email" placeholder="Ваш e-mail">
+
+                        <div class="wrap-btn">
+                            <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nasechki-btn"></div>
+                            <input type="submit" value="Да, я тоже хочу">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="box interesting">
+                    <p class="title">Вам так же может быть интересно:</p>
+
+                    <div class="interesting-box">
+                        <div class="interesting-box__photo">
+                            <img src="img/photo-interesting.png" alt="">
+                        </div>
+                        <p class="interesting-box__description">Здесь будет заголовок который придумал дизайнер</p>
+
+                        <div class="wrap-btn">
+                            <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nasechki-btn"></div>
+                            <button type="submit" class="btn">подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="interesting-box">
+                        <div class="interesting-box__photo">
+                            <img src="img/photo-interesting.png" alt="">
+                        </div>
+                        <p class="interesting-box__description">Здесь будет заголовок который придумал дизайнер</p>
+
+                        <div class="wrap-btn">
+                            <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nasechki-btn"></div>
+                            <button type="submit" class="btn">подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="interesting-box">
+                        <div class="interesting-box__photo">
+                            <img src="img/photo-interesting.png" alt="">
+                        </div>
+                        <p class="interesting-box__description">Здесь будет заголовок который придумал дизайнер</p>
+
+                        <div class="wrap-btn">
+                            <div class="nail nail-left-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-top"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-left-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nail nail-right-bottom"><img src="img/nail.png" alt=""></div>
+                            <div class="nasechki-btn"></div>
+                            <button type="submit" class="btn">подробнее</button>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <div class="footer-navigation">
+        <div>
+            <ul id="footer_menu" class="menu">
+                <li class="menu-item"><a href="index.html">Главная</a></li>
+                <li class="menu-item current-menu-item"><a href="#">Все статьи</a></li>
+                <li class="menu-item"><a href="#">Об авторе и блоге</a></li>
+                <li class="menu-item"><a href="#">Моя жизнь</a></li>
+                <li class="menu-item"><a href="feedback.html">Обратная звязь</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End content -->
+
+
+<!-- Footer -->
+<footer id="colophon" class="site-footer max-width clearfix" itemscope itemtype="http://schema.org/WPFooter">
+    <div class="container">
+        <button type="button" class="scrolltop js-scrolltop"></button>
+
+        <div class="site-footer__copyright">
+            <p>© 2017 Блог Василия Осипова.</p>
+            <p>Когда воруешь мед - главное, чтоб пчелы тебя не заметили!</p>
+        </div>
+
+        <div class="site-footer__counters">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</footer>
+
+<script src="js/scripts.min.js"></script>
+</body>
+</html>

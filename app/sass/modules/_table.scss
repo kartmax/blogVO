@@ -1,0 +1,45 @@
+.table {
+  overflow-x: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+
+  tr {
+    background-color: rgba(85,85,85,0.15);
+    height: 50px;
+  }
+
+  tr:nth-child(2n+1) {
+    background-color: rgba(85,85,85,0.2);
+  }
+
+  th {
+    background-image: linear-gradient(to top, #358285 0%, #4b9f93 100%);
+    font-weight: bold;
+  }
+
+  th, td {
+    vertical-align: middle;
+    text-align: center;
+    min-width: 150px;
+    padding: 10px;
+  }
+
+  tr th:nth-child(2n),
+  tr td:nth-child(2n) {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.1);
+    }
+  }
+}

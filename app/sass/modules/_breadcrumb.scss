@@ -1,0 +1,27 @@
+.breadcrumb {
+  display: none;
+
+  @media only screen and (min-width : 768px){
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  a {
+    @include fontSize(14px);
+    color: #608a4d;
+  }
+
+ .main-page {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  > span > span span {
+    position: relative;
+
+    &:before {
+      content: '>';
+      padding-right: 5px;
+    }
+  }
+}

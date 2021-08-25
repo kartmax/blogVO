@@ -1,0 +1,124 @@
+
+html {
+    font-size: 16px;
+}
+
+
+body {
+    min-width: 280px;
+    position: relative;
+    font-family: $default-font;
+    overflow-x: hidden;
+    line-height: 1.2;
+}
+
+.max-width {
+    max-width: 1054px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media only screen and (min-width : 992px){
+        padding: 0 30px;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.title {
+    color: #000;
+    @include fontSize(20px);
+    font-weight: 700;
+    width: 100%;
+}
+
+h1, p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.nail {
+    display: flex;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+}
+.nail-left-top {
+    left: 6px;
+    top: 6px;
+}
+.nail-right-top {
+    right: 6px;
+    top: 6px;
+}
+.nail-left-bottom {
+    left: 6px;
+    bottom: 6px;
+}
+.nail-right-bottom {
+    right: 6px;
+    bottom: 6px;
+}
+
+.clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.box {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
+
+

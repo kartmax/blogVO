@@ -1,0 +1,103 @@
+/*!
+ *! _____ FORM inputs ________________________________ */
+
+input, textarea, select {
+
+}
+
+//for iPhone
+input, textarea {
+  box-shadow: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+textarea,
+select,
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=tel],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=time],
+input[type=month],
+input[type=week],
+input[type=search] {
+  width: 100%;
+  min-height: 39px;
+  box-shadow: inset 0 3px 7px rgba(93, 93, 93, 0.24), 0 0 10px 1px rgba(205, 205, 205, 0.4);
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.51);
+  background-color: #ebebeb;
+  color: #000;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 5px 18px;
+  font-family: $default-font;
+  @include fontSize(16px);
+}
+
+textarea {
+  padding-top: 15px;
+}
+
+/*******************checkbox*****************/
+
+.checkbox-wrap {
+  position: relative;
+  min-width: 18px;
+  width: 18px;
+  height: 18px;
+
+  .checkbox {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 9px rgba(153, 116, 93, 0.42), 0 0 6px 2px rgba(220, 180, 120, 0.31);
+    border-radius: 2px;
+    border: 1px solid #fff;
+    background-color: #fff;
+  }
+
+  .checkbox-checked-base {
+    position: relative;
+
+    &:before {
+      content: url("../img/check.svg");
+      position: absolute;
+      left: 3px;
+      bottom: 3px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+}
+
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #000;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #000;
+}
+
+::-webkit-input-placeholder {color: #000; @include fontSize(16px); font-weight: 400}
+::-moz-placeholder          {color: #000; @include fontSize(16px); font-weight: 400}
+:-moz-placeholder           {color: #000; @include fontSize(16px); font-weight: 400}
+:-ms-input-placeholder      {color: #000; @include fontSize(16px); font-weight: 400}

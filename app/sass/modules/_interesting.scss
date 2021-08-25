@@ -1,0 +1,51 @@
+.interesting {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .interesting-box__description {
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+
+  .interesting-box {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @media only screen and (min-width : 992px){
+      width: calc(33.33% - 13.33px);
+    }
+  }
+
+  .interesting-box + .interesting-box {
+    margin-left: 0;
+
+    @media only screen and (min-width : 992px){
+      margin-left: 20px;
+    }
+  }
+
+  .interesting-box:nth-of-type(3n + 1) {
+    margin-left: 0;
+  }
+
+  .wrap-btn {
+    width: 100%;
+    min-height: 38px;
+    margin-top: 5px;
+    margin-bottom: 0;
+
+    @media only screen and (min-width : 992px){
+      max-width: 186px;
+    }
+  }
+}

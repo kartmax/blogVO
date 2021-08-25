@@ -1,0 +1,41 @@
+.commentator-box__count {
+  position: absolute;
+  right: -1px;
+  bottom: 4px;
+  min-width: 31px;
+  height: 19px;
+  @include fontSize(13px);
+}
+
+.entry-comments span {
+  position: relative;
+  height: 31px;
+  max-width: 47px;
+  @include fontSize(15px);
+}
+
+.commentator-box__count,
+.entry-comments span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 1px 0 #537045, inset 0 1px 2px rgba(255, 255, 255, 0.43);
+  border-radius: 3px;
+  border: 1px solid #88c36c;
+  background-color: #76aa5d;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.16) 0%, rgba(255, 255, 255, 0.16) 100%);
+  color: #fff;
+  padding: 2px 5px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    right: 10px;
+    width: 5px;
+    height: 7px;
+    background: url("../img/icon-count-coment.png");
+  }
+}
+

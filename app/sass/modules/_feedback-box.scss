@@ -1,0 +1,58 @@
+.feedback-box {
+  box-shadow: inset 0 0 30px 1px rgba(146, 157, 171, 0.34);
+  border-radius: 3px;
+  background-color: #fff;
+  margin-top: 0;
+  padding: 5px 20px 30px;
+
+  @media only screen and (min-width : 768px) {
+    margin-top: 20px;
+  }
+
+  .title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  form {
+    
+    > input:first-of-type,
+    > input:nth-of-type(2) {
+      width: 100%;
+
+      @media only screen and (min-width : 768px) {
+        width: calc(50% - 10px);
+      }
+    }
+
+    > input:nth-of-type(2) {
+      float: right;
+    }
+  }
+
+  input, textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    max-height: 90px;
+    padding-top: 7px;
+  }
+
+  .wrap-btn {
+    float: right;
+    width: 100%;
+    min-height: 38px;
+
+    @media only screen and (min-width : 768px) {
+      width: 241px;
+    }
+  }
+
+  input[type=submit] {
+    @include fontSize(14px);
+    letter-spacing: -0.3px;
+    margin: 0;
+  }
+}
